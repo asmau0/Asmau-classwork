@@ -8,14 +8,14 @@ var welcome;
 var date=new Date();
 var hour=date.getHours();
 if (hour<12){
-    welcome="Good morning";
-}else if (hour<17){
-    welcome="Good afternoon";
+    hi="Good morning";
+}else if (hour>=12 && hour<17){
+    hi="Good afternoon";
 }else{
-    welcome="Good evening";
+    hi="Good evening";
 }
-var name=window.prompt("Enter name:");
-alert(welcome+" "+name);
+var name=prompt("Enter name:");
+alert(hi+" "+name);
 </script>
 </body>
 </head>
